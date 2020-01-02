@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 
 // Modulos
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 // Componentes
 import { HeaderComponent } from './header/header.component';
@@ -22,7 +24,8 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
         BreadcrumbsComponent
     ],
     imports: [
-
+        RouterModule,
+        CommonModule
     ]
 })
 export class SharedModule { }

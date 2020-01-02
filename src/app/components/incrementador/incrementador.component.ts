@@ -6,10 +6,9 @@ import { Component, OnInit, Input, Output, EventEmitter, ViewChild, ElementRef }
   styles: []
 })
 export class IncrementadorComponent implements OnInit {
-  @ViewChild('txtPorcentaje') txtPorcentaje: ElementRef;
+  @ViewChild('txtPorcentaje', { static: false }) txtPorcentaje: ElementRef;
   @Input('nombre') leyenda: string = 'Leyenda';
   @Input() porcentaje: number = 50;
-
   @Output('actualizaValor') cambioValor: EventEmitter<number> = new EventEmitter();
   constructor() { }
 

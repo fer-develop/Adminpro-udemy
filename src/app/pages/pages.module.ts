@@ -16,6 +16,7 @@ import { PAGES_ROUTES } from './pages.routes';
 
 // Temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { AcountSettingsComponent } from './acount-settings/acount-settings.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
         ProgressComponent,
         Graficas1Component,
         IncrementadorComponent,
-        GraficoDonaComponent
+        GraficoDonaComponent,
+        AcountSettingsComponent
     ],
     exports: [
         DashboardComponent,
